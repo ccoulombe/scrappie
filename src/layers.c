@@ -1,7 +1,7 @@
 #ifdef __APPLE__
 #    include <Accelerate/Accelerate.h>
 #else
-#    include <cblas.h>
+#    include <mkl.h>
 #endif
 #include <math.h>
 #include "layers.h"

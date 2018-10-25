@@ -51,6 +51,12 @@ If HDF5 or OpenBLAS libraries are stored in non-standard locations, you can spec
 cmake -DOPENBLAS_ROOT=/software/gcc/openblas -DHDF5_ROOT=/software/gcc/hdf5 ..
 ```
 
+### Intel & MKL
+```bash
+cmake -DHDF5_ROOT=/path/to/HDF5_dir -DCMAKE_C_COMPILER=/path/to/icc -DCMAKE_C_FLAGS=-qopenmp ..
+```
+
+
 ## Running
 ```bash
 #  Set some enviromental variables.

@@ -17,7 +17,7 @@ else:
     else:
         raise IOError('Cannot find scrappie C sources.')
     # this might want to be cblas on some systems
-    libraries=['blas']
+    libraries=['mkl']
     library_dirs=[]
 
 ffibuilder = FFI()
